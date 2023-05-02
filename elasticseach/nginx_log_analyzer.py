@@ -28,11 +28,8 @@ def index_json_to_elasticsearch() -> None:
     args = parser.parse_args()
 
     # Define the Elasticsearch client with authentication
-    if args.username and args.password:
-        es = Elasticsearch(args.elasticsearch_api, http_auth=None, 
-                           basic_auth=(args.username, args.password))
-    else:
-        es = Elasticsearch(args.elasticsearch_api)
+    
+    es = Elasticsearch(args.elasticsearch_api, basic_auth=(args.username, args.password))
 
     # Define the mapping for the index
     mapping = {
