@@ -10,7 +10,7 @@ Nginx-Log-Analyzer is a Python-based tool for processing, analyzing, and visuali
 # Usage
 To use the Nginx-Log-Analyzer, follow these steps:
 
-* Navigate to the root directory of the repository. <br>
+* Navigate to the elasticsearch directory of the repository. <br>
 * Run the nginx_log_analyzer.py script with the required arguments: <br>
 `python nginx_log_analyzer.py <filename> <index_name> <elasticsearch_api> <username> <password>`
 * The script will parse the log file, extract useful information, and index the data into Elasticsearch. <br>
